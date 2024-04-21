@@ -16,15 +16,17 @@ function createBoxes(amount) {
   if (amount >= 1 && amount <= 100) {
     destroyBoxes();
     let size = 30;
+    const elements = [];
 
     for (let i = 0; i < amount; i++) {
       const box = document.createElement('div');
       box.style.width = `${size}px`;
       box.style.height = `${size}px`;
       box.style.backgroundColor = getRandomHexColor();
-      boxes.append(box);
+      elements.push(box);
       size += 10;
     }
+    boxes.append(...elements);
   }
   input.value = '';
   return;

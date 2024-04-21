@@ -28,15 +28,27 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
+let galleryHTML = '';
 
 images.forEach(image => {
-  const galleryItem = document.createElement('li');
-  const galleryImage = document.createElement('img');
-
-  galleryImage.src = image.url;
-  galleryImage.alt = image.alt;
-  galleryItem.classList.add('gallery-item');
-  galleryImage.classList.add('gallery-image');
-  gallery.append(galleryItem);
-  galleryItem.append(galleryImage);
+  galleryHTML += `<li class="gallery-item"><img class="gallery-image" src="${image.url}" alt="${image.alt}"></li>`;
 });
+
+gallery.insertAdjacentHTML('beforeend', galleryHTML);
+
+// const elements = [];
+
+// images.forEach(image => {
+//   const galleryItem = document.createElement('li');
+//   const galleryImage = document.createElement('img');
+
+//   galleryImage.src = image.url;
+//   galleryImage.alt = image.alt;
+//   galleryItem.classList.add('gallery-item');
+//   galleryImage.classList.add('gallery-image');
+
+//   galleryItem.append(galleryImage);
+//   elements.push(galleryItem);
+// });
+
+// gallery.append(...elements);
