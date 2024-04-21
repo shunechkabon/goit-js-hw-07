@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* Завдання 1 */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 392px;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #F6F6FE;
+}
+
+.item h2 {
+  margin: 0;
+}
+
+.item ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item ul li {
+  list-style-type: none;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+/* Завдання 2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery-item {
+  display: flex;
+  width: calc(33.33% - 24px);
+  align-items: center;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Завдання 3 */
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+}
+
+.anonymous-title {
+  margin-top: 16px;
+  font-family: sans-serif;
+}
+
+/* Завдання 4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 408px;
+  padding: 24px;
+  background: #FFF;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.login-form label input {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.login-form label input:hover {
+  border: 1px solid #000;
+}
+
+.login-form label input:active {
+    border: 1px solid #808080;
+}
+
+.login-form button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  width: 86px;
+  height: 40px;
+  margin-top: 8px;
+  border-radius: 8px;
+  background: #4E75FF;
+  border: none;
+  color: #FFF;
+  font-family: sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.login-form button:hover {
+  background: #6C8CFF;
+}
+
+/* Завдання 5 */
+.widget {
+  display: inline-flex;
+  padding: 100px 88px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+  background: #FFF;
+}
+
+.widget p {
+  font-family: sans-serif;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.change-color {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #4E75FF;
+  border: none;
+  color: #FFF;
+  font-family: sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.change-color:hover {
+  background: #6C8CFF;
+}
+
+/* Завдання 6 */
+#controls {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #F6F6FE;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  padding: 8px 72px;
+  height: 40px;
+}
+
+#controls button {
+  width: 120px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+  color: #FFF;
+  font-family: sans-serif;
+  letter-spacing: 0.04em;
+  background: #4E75FF;
+}
+
+#controls button:hover {
+  background: #6C8CFF;
+}
+
+#controls button:last-child {
+  background: #FF4E4E;
+}
+
+#controls button:last-child:hover {
+  background: #FF7070;
+}
+
+#boxes {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 44px;
+  border-radius: 8px;
+  background: #F6F6FE;
+  flex-wrap: wrap;
+}
